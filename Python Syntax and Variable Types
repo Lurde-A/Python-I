@@ -1,0 +1,10 @@
+1. Change Codecademy to your name in the script to the right. Run the code to see what it does!
+//
+my_name = "Lurdė"
+print("Hello and welcome " + my_name + "!");
+
+2. Documentation is an important step in programming. Write a comment describing the first program you want to write!
+//
+# Lurde_A. First Python Program
+
+3. 
