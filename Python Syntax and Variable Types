@@ -31,5 +31,46 @@ print("Lurde")           OR            print('Lurde')
   print("Dinner:")
   print(meal)
 
-6.
+6. Update the malformed strings in the workspace to all be strings.
+//
+Abracadabra = "This message has mismatched quote marks!"
+print(Abracadabra)
+
+7.1 Create the following variables and assign integer numbers to them: release_year and runtime.
+//
+release_year = 2022
+runtime = 2023
+7.2 Now, create the variable rating_out_of_10 and assign it a float number between one and ten.
+//
+rating_out_of_10=3.14
+
+8. Print out the result of this equation: 25 * 68 + 13 / 28
+//
+print((25 * 68) + (13 / 28)
+
+9.1 You’ve decided to get into quilting! To calculate the number of squares you’ll need for your first quilt let’s create two variables: quilt_width and quilt_length. Let’s make this first quilt 8 squares wide and 12 squares long.
+//
+quilt_width=8
+quilt_length=12
+9.2 You’ve decided to get into quilting! To calculate the number of squares you’ll need for your first quilt let’s create two variables: quilt_width and quilt_length. Let’s make this first quilt 8 squares wide and 12 squares long.
+//
+quilt_width=8
+quilt_length=12
+9.3 It turns out that quilt required a little more material than you have on hand! Let’s only make the quilt 8 squares long. How many squares will you need for this quilt instead?
+//
+quilt_length=8
+print(quilt_width * quilt_length)
+
+10.1 You really like how the square quilts from last exercise came out, and decide that all quilts that you make will be square from now on. 
+Using the exponent operator, print out how many squares you’ll need for a 6x6 quilt, a 7x7 quilt, and an 8x8 quilt.
+//
+print(6 ** 2)
+print(7 ** 2)
+print(8 ** 2)
+10.2 Your 6x6 quilts have become so popular that 6 people have each requested 6 quilts. Print out how many total tiles you would need to make 6 6x6 quilts for 6 people.
+//
+print(6 ** 4)
+
+11.
+
 
