@@ -15,15 +15,21 @@ print("Hello world!")
 //
 print("Lurde")           OR            print('Lurde')
 
-5. 
+5. Update the variable meal to reflect each meal of the day before we print it.
 //
-# G here to the name of the food we ate /
-meal="English Muffins"
-print("Breakfast:")
-print(meal)
+# G here to the name of the food we ate
+  meal="English Muffins"
+  print("Breakfast:")
+  print(meal)
 # Now update meal to be lunch!
-meal="McDonalds"
+  meal="McDonalds"
 # Printing out lunch
-print("Lunch:")
-print(meal)
+  print("Lunch:")
+  print(meal)
+#Print out dinner
+  meal="Poteito Potato salad"
+  print("Dinner:")
+  print(meal)
+
+6.
 
