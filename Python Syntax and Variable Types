@@ -7,4 +7,23 @@ print("Hello and welcome " + my_name + "!");
 //
 # Lurde_A. First Python Program
 
-3. 
+3. Print the distinguished greeting “Hello world!”
+//
+print("Hello world!")
+
+4. Print your name using the print() command.//
+//
+print("Lurde")           OR            print('Lurde')
+
+5. 
+//
+# G here to the name of the food we ate /
+meal="English Muffins"
+print("Breakfast:")
+print(meal)
+# Now update meal to be lunch!
+meal="McDonalds"
+# Printing out lunch
+print("Lunch:")
+print(meal)
+
