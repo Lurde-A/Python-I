@@ -71,6 +71,23 @@ print(8 ** 2)
 //
 print(6 ** 4)
 
-11.
+11.1 To find the remainder of the division operation, you can use the modulo operator %. In this case, you would 
+use 263 % 11 and store the result in the variable order_263_r.
+//
+order_263_r = 263 % 11
+print (order_263_r)
+11.2 Based on the value of order_263_r, should this order receive a coupon? Create a new variable called order_263_coupon and assign to it a value of "yes" 
+if the order should get a coupon, otherwise "no".
+//
+order_263_coupon="No"
+11.3 Here comes another order, #264! Find the remainder by calculating 264 modulo 11 and store the result in a variable called order_264_r.
+Print out order_264_r.
+//
+order_264_r = 264 % 11
+print (order_264_r)
+11.4 Based on the value of order_264_r, should this order receive a coupon? Create a new variable called order_264_coupon 
+and assign to it a value of "yes" if the order should get a coupon, otherwise "no".
+//
+order_264_coupon="Yes"
 
-
+12. 
