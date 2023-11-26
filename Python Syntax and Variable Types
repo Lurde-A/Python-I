@@ -123,4 +123,30 @@ total_price += fun_books
 
 print("The total price is", total_price)
 
-14.
+14. Assign the string
+
+Stranger, if you passing meet me and desire to speak to me, why
+  should you not speak to me?
+And why should I not speak to you?
+
+to the variable to_you.
+//
+to_you= """Stranger, if you passing meet me and desire to speak to me, why
+  should you not speak to me?
+And why should I not speak to you?"""
+
+print(to_you)
+
+15. Create variables:
+  my_age
+  half_my_age
+  greeting
+  name
+  greeting_with_name
+Assign values to each using your knowledge of division and concatenation!
+//
+my_age = 29
+half_my_age = my_age / 2
+greeting = "How're you doing...?"
+name = "Love"
+greeting_with_name = greeting + name
