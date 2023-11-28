@@ -2,7 +2,7 @@
 //
 def directions_to_timesSq():
 
-2.Within the body of the function, use three print() statements to output the following directions:
+2.Within the body of the function, use three print() statements to output the following directions and call out the function:
 - Walk 4 mins to 34th St Herald Square train station
 - Take the Northbound N, Q, R, or W train 1 stop
 - Get off the Times Square 42nd Street stop
