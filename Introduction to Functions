@@ -2,7 +2,7 @@
 //
 def directions_to_timesSq():
 
-2.Within the body of the function, use three print() statements to output the following directions and call out the function:
+2. Within the body of the function, use three print() statements to output the following directions and call out the function:
 - Walk 4 mins to 34th St Herald Square train station
 - Take the Northbound N, Q, R, or W train 1 stop
 - Get off the Times Square 42nd Street stop
@@ -13,5 +13,32 @@ def directions_to_timesSq():
   print("Get off the Times Square 42nd Street stop")
 directions_to_timesSq()
 
-3.
+3.1 Write a print() statement that will output Checking the weather for you!
+//
+print("Checking the weather for you!")
 
+3.2 Write a function called weather_check() that will print a message to our users that it’s a great day to travel! The function should output:
+//
+def weather_check():
+  print("Looks great outside! Enjoy your trip.")
+
+3.3 In our weather_check() function add a second print() statement under the first one which prints a warning message for our travelers! It should print:
+"False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside."
+//
+def weather_check():
+  print("Looks great outside! Enjoy your trip.")
+  print("False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside.")
+
+3.4 Call the function weather_check().
+//
+def weather_check():
+  print("Looks great outside! Enjoy your trip.")
+  print("False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside.")
+weather_check()
+
+3.5 Unindent your final print statement in your weather_check() function. Run the program again. What is different?
+//
+def weather_check():
+  print("Looks great outside! Enjoy your trip.")
+print("False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside.")
+weather_check()
