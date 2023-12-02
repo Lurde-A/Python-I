@@ -42,3 +42,37 @@ def weather_check():
   print("Looks great outside! Enjoy your trip.")
 print("False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside.")
 weather_check()
+
+4.1 Create a function called generate_trip_instructions() that defines one parameter called location.
+//
+def generate_trip_instructions(location):
+
+4.2 generate_trip_instructions() should print out the following: "Looks like you are planning a trip to visit <location>"
+Where <location> will represent the location parameter.
+//
+def generate_trip_instructions(location):
+  print("Looks like you are planning a trip to visit " + location)
+
+4.3 Let’s have generate_trip_instructions()also print out the following on a new line: "You can use the public subway system to get to <location>"
+Where <location> will represent the location parameter.
+//
+def generate_trip_instructions(location):
+  print("Looks like you are planning a trip to visit " + location)
+  print("You can use the public subway system to get to " + location)
+
+4.4 Time for some greenery! Let’s see what happens when we call the function and input the argument "Central Park", a backyard wonder in the heart of New York City.
+//
+def generate_trip_instructions(location):
+  print("Looks like you are planning a trip to visit " + location)
+  print("You can use the public subway system to get to " + location)
+generate_trip_instructions("Central Park")
+
+4.5 The day trip is over and we need to get back to the train station to head home. Change the argument to "Grand Central Station" and call the function again.
+What changed in the output?
+//
+def generate_trip_instructions(location):
+  print("Looks like you are planning a trip to visit " + location)
+  print("You can use the public subway system to get to " + location)
+generate_trip_instructions("Grand Central Station")
+
+5.1
