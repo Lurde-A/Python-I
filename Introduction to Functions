@@ -75,4 +75,109 @@ def generate_trip_instructions(location):
   print("You can use the public subway system to get to " + location)
 generate_trip_instructions("Grand Central Station")
 
-5.1
+5.1 Our travel application users want to calculate the total expenses they may have to incur on a trip.
+
+Write a function called calculate_expenses that will have four parameters (in exact order):
+    plane_ticket_price
+    car_rental_rate
+    hotel_rate
+    trip_time
+Each of these parameters will account for a different expense that our users will incur.
+//
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+
+5.2 Within the body of the function, let’s start to make some calculations for our expenses. First, let’s calculate the total price for a car rental.
+Create new variable called car_rental_total that is the product of car_rental_rate and trip_time.
+//
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+  car_rental_total=car_rental_rate*trip_time
+
+5.3 Next, we want to apply the same logic but for our hotel_rate. Create new variable called hotel_total that is the product of hotel_rate and trip_time.
+We also have a coupon to give our users some cashback for their hotel visit so subtract 10 from that total in the same statement. Woohoo, coupons! 💵
+//
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+  car_rental_total=car_rental_rate*trip_time
+  hotel_total=hotel_rate*trip_time-10
+
+5.4 Lastly, let’s print a nice message for our users to see the total. Use print() to output the sum of car_rental_total, hotel_total, and plane_ticket_price.
+//
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+  car_rental_total=car_rental_rate*trip_time
+  hotel_total=hotel_rate*trip_time-10
+  print(car_rental_total + hotel_total + plane_ticket_price)
+
+5.5 Call your function with the following argument values for the parameters listed:
+      plane_ticket_price : 200
+      car_rental_rate : 100
+      hotel_rate : 100
+      trip_time: 5
+//
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+  car_rental_total=car_rental_rate*trip_time
+  hotel_total=hotel_rate*trip_time-10
+  print(car_rental_total + hotel_total + plane_ticket_price)
+calculate_expenses(200, 100, 100, 5)
+
+6.1 Tripcademy (our trusty travel app) needs to allow passengers to plan a trip (duh). 
+Write a function called trip_planner() that will have three parameters: first_destination, second_destination and final_destination.
+Give the final_destination parameter a default value of "Codecademy HQ".
+//
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+
+6.2 First, we want to introduce the trip to users. Use print() in our function to output Here is what your trip will look like!.
+//
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+  print("Here is what your trip will look like!")
+
+6.3 In our function definition let’s provide an itinerary that will describe the destinations our user will visit in order. Print a statement that follows this form:
+First, we will stop in <first_destination>, then <second_destination>, and lastly <final_destination>
+An example call to our function using positional arguments:
+      trip_planner("London", "India", "New Zealand")
+Should output:
+      Here is what your trip will look like!
+      First, we will stop in London, then India, and lastly New Zealand
+To test out your function, call trip_planner() with the following values for the parameters:
+      first_destination: "France"
+      second_destination: "Germany"
+      final_destination: "Denmark"
+//
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+  print("Here is what your trip will look like!")
+  print("First, we will stop in "+ first_destination + ", then " + second_destination + ", and lastly " + final_destination)
+trip_planner("France", "Germany", "Denmark")
+
+6.4 Call the function trip_planner() again with the following values for the parameters:
+      first_destination: "Denmark"
+      second_destination: "France"
+      final_destination: "Germany"
+Note the difference in your output depending on the position of your arguments.
+//
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+  print("Here is what your trip will look like!")
+  print("First, we will stop in "+ first_destination + ", then " + second_destination + ", and lastly " + final_destination)
+trip_planner("France", "Germany", "Denmark")
+trip_planner("Denmark", "France", "Germany")
+
+6.5 Call the function trip_planner() again but this time include the keyword arguments (e.g. first_destination) and put them in this exact order:
+      first_destination = "Iceland"
+      final_destination = "Germany"
+      second_destination = "India"
+//
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+  print("Here is what your trip will look like!")
+  print("First, we will stop in "+ first_destination + ", then " + second_destination + ", and lastly " + final_destination)
+trip_planner("France", "Germany", "Denmark")
+trip_planner("Denmark", "France", "Germany")
+trip_planner(first_destination = "Iceland", final_destination = "Germany", second_destination = "India")
+
+6.6. Lastly, go ahead and call the function trip_planner() using only two positional arguments to see the default argument in action:
+      first_destination: "Brooklyn"
+      second_destination: "Queens"
+//
+def trip_planner(first_destination, second_destination, final_destination="Codecademy HQ"):
+  print("Here is what your trip will look like!")
+  print("First, we will stop in "+ first_destination + ", then " + second_destination + ", and lastly " + final_destination)
+trip_planner("France", "Germany", "Denmark")
+trip_planner("Denmark", "France", "Germany")
+trip_planner(first_destination = "Iceland", final_destination = "Germany", second_destination = "India")
+trip_planner("Brooklyn", "Queens")
