@@ -1,6 +1,10 @@
+                                                                          DEFINING A FUNCTION
+
 1. First, define a function, directions_to_timesSq(). Leave the body of the function empty for now.
 //
 def directions_to_timesSq():
+
+                                                                          CALLING A FUNCTION
 
 2. Within the body of the function, use three print() statements to output the following directions and call out the function:
 - Walk 4 mins to 34th St Herald Square train station
@@ -12,6 +16,8 @@ def directions_to_timesSq():
   print("Take the Northbound N, Q, R, or W train 1 stop")
   print("Get off the Times Square 42nd Street stop")
 directions_to_timesSq()
+
+                                                                          WHITESPACE & EXECUTION FLOW
 
 3.1 Write a print() statement that will output Checking the weather for you!
 //
@@ -42,6 +48,8 @@ def weather_check():
   print("Looks great outside! Enjoy your trip.")
 print("False Alarm, the weather changed! There is a thunderstorm approaching. Cancel your plans and stay inside.")
 weather_check()
+
+                                                                          PARAMETERS & ARGUMENTS
 
 4.1 Create a function called generate_trip_instructions() that defines one parameter called location.
 //
@@ -74,6 +82,8 @@ def generate_trip_instructions(location):
   print("Looks like you are planning a trip to visit " + location)
   print("You can use the public subway system to get to " + location)
 generate_trip_instructions("Grand Central Station")
+
+                                                                          MULTIPLE PARAMETERS
 
 5.1 Our travel application users want to calculate the total expenses they may have to incur on a trip.
 
@@ -117,6 +127,8 @@ def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_tim
   hotel_total=hotel_rate*trip_time-10
   print(car_rental_total + hotel_total + plane_ticket_price)
 calculate_expenses(200, 100, 100, 5)
+
+                                                                          TYPES OF ARGUMENTS
 
 6.1 Tripcademy (our trusty travel app) needs to allow passengers to plan a trip (duh). 
 Write a function called trip_planner() that will have three parameters: first_destination, second_destination and final_destination.
@@ -182,6 +194,8 @@ trip_planner("Denmark", "France", "Germany")
 trip_planner(first_destination = "Iceland", final_destination = "Germany", second_destination = "India")
 trip_planner("Brooklyn", "Queens")
 
+                                                                          BUILT-IN FUNCTIONS vs USER DEFINED FUNCTIONS
+
 7.1 We were provided a list of prices for some gift shop items:
       T-shirt: 9.75
       Shorts: 15.50
@@ -204,6 +218,8 @@ Save the result to a variable called rounded_price and print it.
 //
 rounded_price = round(tshirt_price, 1)
 print(rounded_price)
+
+                                                                          VARIABLE ACCESS
 
 8.1 Our users want to be able to save a list of their favorite places in our travel application. We have received a rough draft for this implementation from another coder, 
 but there are some problems with variable scope which prevent it from working properly.Take a second to understand what the program is doing and then hit Run the code to see the error.
