@@ -1,0 +1,214 @@
+              1. First, take a look at the code in script.py.
+In this code, we estimate the medical insurance costs for two individuals, Maria and Omar, based on five variables:
+      age: age of the individual in years
+      sex: 0 for female, 1 for male
+      bmi: individual’s body mass index
+      num_of_children: number of children the individual has
+      smoker: 0 for a non-smoker, 1 for a smoker
+These variables are used in the following formula to estimate an individual’s insurance cost (in USD):
+insurance_cost=250*age−128*sex+370*bmi+425*num_of_children+24000*smoker−12500
+insurance_cost=250*age−128*sex
++370*bmi+425*num_of_children
++24000*smoker−12500
+​//
+# Initial variables for Maria 
+age = 28
+sex = 0  
+bmi = 26.2
+num_of_children = 3
+smoker = 0  
+
+# Estimate Maria's insurance cost
+insurance_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+
+print("The estimated insurance cost for Maria is " + str(insurance_cost) + " dollars.")
+
+# Initial variables for Omar
+age = 35
+sex = 1 
+bmi = 22.2
+num_of_children = 0
+smoker = 1  
+
+# Estimate Omar's insurance cost 
+insurance_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+
+print("The estimated insurance cost for Omar is " + str(insurance_cost) + " dollars.")
+
+
+              2. The code used to estimate insurance costs for Maria and Omar looks quite similar – in both cases we calculate the insurance cost using the same formula and then print the output.
+This code is a great candidate for a function because it involves repeating almost identical commands in multiple places.
+Let’s start by defining a function called calculate_insurance_cost() on line 2. For now, your function should not have any parameters or output.
+//
+
+def calculate_insurance_cost():
+
+# Initial variables for Maria 
+age = 28
+sex = 0  
+bmi = 26.2
+num_of_children = 3
+smoker = 0  
+
+# Estimate Maria's insurance cost
+insurance_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+
+print("The estimated insurance cost for Maria is " + str(insurance_cost) + " dollars.")
+
+# Initial variables for Omar
+age = 35
+sex = 1 
+bmi = 22.2
+num_of_children = 0
+smoker = 1  
+
+# Estimate Omar's insurance cost 
+insurance_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+
+print("The estimated insurance cost for Omar is " + str(insurance_cost) + " dollars.")
+
+              3. Let’s outline the behavior we want our function to have. Inside of calculate_insurance_cost(), do the following:
+      -  Create a variable called estimated_cost. For now, set this variable equal to a value of 1000. You’ll add the full formula in the next step.
+      -  Add a print statement that prints estimated_cost. You should output a message similar to: "The estimated insurance cost for this person is xxx dollars."
+      -  Return estimated_cost
+//
+def calculate_insurance_cost():
+  estimated_cost=1000
+  print("The estimated insurance cost for this person is" + str(estimated_cost) + "dollars.")
+  return estimated_cost
+...
+
+              4. Modify the function definition so that it contains five parameters:
+      - age
+      - sex
+      - bmi
+      - num_of_children
+      - smoker
+Take a look at the hint if you need a reminder on how to add parameters to a function definition.
+//
+def calculate_insurance_cost(age, sex, bmi, num_of_children):
+  estimated_cost=1000
+  print("The estimated insurance cost for this person is" + str(estimated_cost) + "dollars.")
+  return estimated_cost
+
+              5. In calculate_insurance_cost(), change the value of estimated_cost from 1000 to our formula for insurance cost.
+Remember that the formula for insurance cost is:
+250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+//
+def calculate_insurance_cost(age, sex, bmi, num_of_children):
+  estimated_cost=250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+  print("The estimated insurance cost for this person is" + str(estimated_cost) + "dollars.")
+  return estimated_cost
+...
+
+              6. The function is now properly set up to calculate an individual’s medical insurance costs based on the five variables passed into it. Let’s test this out!
+Go to the section of code that estimates Maria’s insurance cost.
+Rename insurance_cost as maria_insurance_cost and set it equal to calculate_insurance_cost() with the appropriate values for Maria as arguments.
+//
+...
+maria_insurance_cost = calculate_insurance_cost(age=28, sex=0, bmi=26.2, num_of_children=3, smoker=0)
+...
+
+              7. Now, remove the print statement for Maria since our function will take care of printing the estimated cost for us.
+Additionally, remove the five lines of code defining the initial variables for Maria, as we are now passing in these values directly in the function call.
+// 
+WHAT'S LEFT IN A CODE:
+
+# Create calculate_insurance_cost() function below: 
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker):
+  estimated_cost=250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+  print("The estimated insurance cost for this person is " + str(estimated_cost) + "dollars.")
+  return estimated_cost
+
+# Initial variables for Maria 
+
+# Estimate Maria's insurance cost
+maria_insurance_cost = calculate_insurance_cost(age=28, sex=0, bmi=26.2, num_of_children=3, smoker=0)
+
+# Initial variables for Omar
+age = 35
+sex = 1 
+bmi = 22.2
+num_of_children = 0
+smoker = 1  
+
+# Estimate Omar's insurance cost 
+insurance_cost = 250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+
+print("The estimated insurance cost for Omar is " + str(insurance_cost) + " dollars.")
+
+              8. Repeat steps 6-7 for Omar:
+Rename insurance_cost as omar_insurance_cost and set it equal to the calculate_insurance_cost() function, passing in the appropriate values as arguments.
+Remove the initial variables and print statement for Omar.
+Notice how much cleaner our code is now! By utilizing a Python function, we were able to condense many lines of code into just a few.
+//
+ef calculate_insurance_cost(age, sex, bmi, num_of_children, smoker):
+  estimated_cost=250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+  print("The estimated insurance cost for this person is " + str(estimated_cost) + "dollars.")
+  return estimated_cost
+
+# Initial variables for Maria 
+# Estimate Maria's insurance cost
+maria_insurance_cost = calculate_insurance_cost(age=28, sex=0, bmi=26.2, num_of_children=3, smoker=0)
+
+# Initial variables for Omar
+# Estimate Omar's insurance cost 
+omar_insurance_cost = calculate_insurance_cost(age=35, sex=1, bmi=21.2, num_of_children=0, smoker=1)
+
+              9. In the output terminal, notice that it says "The estimated insurance cost for this person is..." but it does not specify the actual name of the person.
+To fix this, begin by adding an additional parameter called name to the function definition.
+//
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker, name):def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker, name):
+...
+
+              10. Next, modify the print statement in the function so that it includes the new name parameter, replacing "this person" with the actual name of the person.
+//
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker, name):
+  estimated_cost=250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+  print("The estimated insurance cost for" + name + "is " + str(estimated_cost) + "dollars.")
+  return estimated_cost
+
+              11. We must also update our function calls, passing in the name variable as an argument.
+Update the function call for maria_insurance_cost, passing in name = "Maria" as an argument.
+Do the same for Omar, passing in name = "Omar".
+Now if you click “Save”, you’ll see that our function is able to write a more personalized message specifying the name of the individual it is estimating insurance costs for. Pretty neat, right?
+//
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker, name):
+  estimated_cost=250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+  print("The estimated insurance cost for" + name + "is " + str(estimated_cost) + "dollars.")
+  return estimated_cost
+
+# Initial variables for Maria 
+# Estimate Maria's insurance cost
+maria_insurance_cost = calculate_insurance_cost(age=28, sex=0, bmi=26.2, num_of_children=3, smoker=0, name=" Maria ")
+
+# Initial variables for Omar
+# Estimate Omar's insurance cost 
+omar_insurance_cost = calculate_insurance_cost(age=35, sex=1, bmi=21.2, num_of_children=0, smoker=1, name=" Omar ")
+
+              12. At the bottom of your code, create a new insurance_cost variable for yourself, similar to how we did it for Maria and Omar.
+Set the variable equal to a function call to calculate_insurance_cost(), passing in your own name, age, sex, bmi, number of children, and smoker status.
+Click “Save” to see the result.
+//
+...
+Lurde_insurance_cost = calculate_insurance_cost(age=**, sex=0, bmi=**.*, num_of_children=*, smoker=0, name=" Lurde ")
+
+              13. Now it’s your turn! If you’d like extra practice with Python functions, here are some suggestions to get you started:
+1) Modify the calculate_insurance_cost() function so that it returns two values – the output message and the estimated cost.
+2) Create a second function to calculate the difference between the insurance costs (given as inputs) of any two individuals and print a statement saying: "The difference in insurance cost is xxx dollars."
+//
+1)# Create calculate_insurance_cost() function below: 
+def calculate_insurance_cost(age, sex, bmi, num_of_children, smoker, name):
+  estimated_cost=250*age - 128*sex + 370*bmi + 425*num_of_children + 24000*smoker - 12500
+  output_message=print("The estimated insurance cost for" + name + "is " + str(estimated_cost) + "dollars.")
+  return estimated_cost
+  return output_message
+# Initial variables for Maria 
+# Estimate Maria's insurance cost
+maria_insurance_cost = calculate_insurance_cost(age=28, sex=0, bmi=26.2, num_of_children=3, smoker=0, name=" Maria ")
+# Initial variables for Omar
+# Estimate Omar's insurance cost 
+omar_insurance_cost = calculate_insurance_cost(age=35, sex=1, bmi=21.2, num_of_children=0, smoker=1, name=" Omar ")
+Lurde_insurance_cost = calculate_insurance_cost(age=29, sex=0, bmi=20.7, num_of_children=0, smoker=0, name=" Lurde ")
+
+2)
