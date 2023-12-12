@@ -43,6 +43,9 @@ print("The change in cost of insurance after increasing the age by 4 years is " 
          Set age to 28 following your last piece of code. This will reset its value and allow us to focus on just the change in the BMI factor moving forward.
          On the next line, using the plus-equal operator, add 3.1 to our bmi variable.
 //
+age=28
+bmi+=3.1
+
       9. Now let’s find out how a change in BMI affects insurance costs. Our next steps are pretty much the same as we have done before when looking at age.
           - Below the line where bmi was increased by 3.1, rewrite the insurance cost formula and assign it to the variable name new_insurance_cost.
           - Save the difference between new_insurance_cost and insurance_cost in a variable called change_in_insurance_cost
@@ -50,3 +53,21 @@ print("The change in cost of insurance after increasing the age by 4 years is " 
           - The change in estimated insurance cost after increasing BMI by 3.1 is XXX dollars.
 You can leave the code above it as is, including the print statements.
 //
+new_insurance_cost=250*age-128*sex+370*bmi+425*num_of_children+24000*smoker-12500
+change_in_insurance_cost = new_insurance_cost - insurance_cost
+print("The change in estimated insurance cost after increasing BMI by 3.1 is " + str(change_in_insurance_cost) + " dollars.")
+
+      10. Let’s look at the effect sex has on medical insurance costs. Before we make any additional changes, first reassign your bmi variable back to its original value of 26.2.
+          On a new line of code, reassign the value of sex to 1. A reminder that 1 identifies male individuals and 0 identifies female individuals.
+//
+bmi=26.2
+sex=1
+      11. Rewrite the insurance cost formula and assign it to the variable name new_insurance_cost.
+          Save the difference between new_insurance_cost and insurance_cost in a variable called change_in_insurance_cost.
+          Display the following string in the output terminal, where XXX is replaced by the value of change_in_insurance_cost:
+//
+bmi=26.2
+sex=1
+new_insurance_cost=250*age-128*sex+370*bmi+425*num_of_children+24000*smoker-12500
+change_in_insurance_cost=new_insurance_cost-insurance_cost
+print("The change in estimated cost for being male instead of female is " + str(change_in_insurance_cost) + " dollars.")
