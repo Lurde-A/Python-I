@@ -13,7 +13,7 @@ My dog is named Pavel.
 Dogs make the best pets.
 - Statement four:
 Cats are female dogs.
-
+                                                      RELATIONAL OPERATORS: EQUALS AND NOT EQUALS
   2. Determine if the following boolean expressions are True or False. Input your answer as True or False in the appropriate variable to the right.
           Statement one:
           (5 * 2) - 1 == 8 + 1
@@ -26,6 +26,7 @@ statement_one = True
 statement_two = False
 statement_three = True
 
+                                                      BOOLEAN VARIABLES
   3.1 Create a variable named my_baby_bool and set it equal to the string "true".
 //
 my_baby_bool = "true"
@@ -45,6 +46,7 @@ print(type(my_baby_bool))
 my_baby_bool_two = True
 print(type(my_baby_bool_two))
 
+                                                      IF STATEMENTS
   4.1 In script.py, there is an if statement. I wrote this because my coworker Dave kept using my computer without permission and he is a real doofus. If the user_name is Dave, it tells him to stay off my computer.
 Enter a user name in the field for user_name and try running the program. 
 //
@@ -66,4 +68,20 @@ if user_name == "Dave":
 if user_name == "angela_catlady_87":
   print("I know it is you, Dave! Go away!")
 
-  5.1
+                                                      RELATIONAL OPERATORS II
+  5.1 Create an if statement that checks if x and y are equal, print the string below if so: "These numbers are the same"
+//
+x = 20
+y = 20
+if x==y:
+  print("These numbers are the same")
+
+  5.2  The nearby college, Calvin Coolidge’s Cool College (or 4C, as the locals call it) requires students to earn 120 credits to graduate. Write an if statement that checks if the student 
+has enough credits to graduate. If they do, print the string: "You have enough credits to graduate!"
+//
+credits = 120
+if credits >= 120:
+  print("You have enough credits to graduate!")
+
+                                                      BOOLEAN OPERATORS: AND
+  6.1 
