@@ -46,7 +46,7 @@ rating_out_of_10=3.14
 
 8. Print out the result of this equation: 25 * 68 + 13 / 28
 //
-print((25 * 68) + (13 / 28)
+print((25 * 68) + (13 / 28))
 
 9.1 You’ve decided to get into quilting! To calculate the number of squares you’ll need for your first quilt let’s create two variables: quilt_width and quilt_length. Let’s make this first quilt 8 squares wide and 12 squares long.
 //
