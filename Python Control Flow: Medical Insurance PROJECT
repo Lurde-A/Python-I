@@ -31,3 +31,7 @@ ANALYZING SMOKER STATUS
 Let’s create a function that analyzes an individual’s smoking status.
 At the top of your code, define a function called analyze_smoker() that takes an input smoker_status. For now, the function should print smoker_status.
 //
+def analyze_smoker(smoker_status):
+  print(smoker_status)
+
+4.
