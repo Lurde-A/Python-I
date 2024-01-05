@@ -178,7 +178,7 @@ elif grade >= 60:
 else:
   print("F")
 
-                                                      ELSE IF STATEMENTS
+                                                      REVIEW
   11. Write a space.py program that helps Codey keep track of their target weight by:
 1.	Checking which number planet is equal to.
 2.	Computing Codey’s weight on the destination planet.
