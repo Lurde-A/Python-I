@@ -84,4 +84,66 @@ if credits >= 120:
   print("You have enough credits to graduate!")
 
                                                       BOOLEAN OPERATORS: AND
-  6.1 
+  6.1 Set the variables statement_one and statement_two equal to the results of the following boolean expressions:
+Statement one:
+(2 + 2 + 2 >= 6) and (-1 * -1 < 0)
+Statement two:
+(4 * 2 <= 8) and (7 - 1 == 6)
+//
+statement_one = False
+statement_two = True
+
+  6.2 Let’s return to Calvin Coolidge’s Cool College. 120 credits aren’t the only graduation requirement, you also need to have a GPA of 2.0 or higher. Rewrite the if statement so that 
+it checks to see if a student meets both requirements using an and statement.
+If they do, print the string:
+"You meet the requirements to graduate!"
+//
+if credits >= 120 and gpa >= 2.0 :
+  print("You meet the requirements to graduate!")
+
+                                                      BOOLEAN OPERATORS: OR
+  7.1 Set the variables statement_one and statement_two equal to the results of the following boolean expressions:
+Statement one:
+(2 - 1 > 3) or (-5 * 2 == -10)
+Statement two:
+(9 + 5 <= 15) or (7 != 4 + 3)
+//
+statement_one = True
+statement_two = True
+
+  7.2 The registrar’s office at Calvin Coolidge’s Cool College has another request. They want to send out a mailer with information on the commencement ceremonies to students who have 
+met at least one requirement for graduation (120 credits and 2.0 GPA).
+Write an if statement that checks if a student either has 120 or more credits or a GPA 2.0 or higher, and if so prints:
+"You have met at least one of the requirements."
+//
+if credits >= 120 or gpa >= 2.0:
+  print("You have met at least one of the requirements.")
+
+                                                      BOOLEAN OPERATORS: NOT
+  8.1 Set the variables statement_one and statement_two equal to the results of the following boolean expressions:
+Statement one:
+not (4 + 5 <= 9)
+Statement two:
+not (8 * 2) != 20 - 4
+//
+statement_one = False
+statement_two = True
+  8.2 The registrar’s office at Calvin Coolidge’s Cool College has been so impressed with your work so far that they have another task for you.
+They want you to return to a previous if statement and add in several checks using and and not statements:
+- If a student’s credits is not greater or equal to 120, it should print:
+"You do not have enough credits to graduate."
+- If their gpa is not greater or equal to 2.0, it should print:
+"Your GPA is not high enough to graduate."
+- If their credits is not greater than or equal to 120 and their gpa is not greater than or equal to 2.0, it should print:
+"You do not meet either requirement to graduate!"
+Make sure your return value matches those strings exactly. Capitalization, punctuation, and spaces matter!
+//
+if not credits >=120:
+  print("You do not have enough credits to graduate.")
+if not gpa >= 2.0:
+  print("Your GPA is not high enough to graduate.")
+if not credits >= 120 and not gpa >= 2.0:
+  print("You do not meet either requirement to graduate!")              returns "Your GPA is not high enough to graduate."
+
+
+                                                            
