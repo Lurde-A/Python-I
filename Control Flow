@@ -145,5 +145,82 @@ if not gpa >= 2.0:
 if not credits >= 120 and not gpa >= 2.0:
   print("You do not meet either requirement to graduate!")              returns "Your GPA is not high enough to graduate."
 
+                                                      ELSE STATEMENTS
+  9. Calvin Coolidge’s Cool College has another request for you. They want you to add an additional check to a previous if statement. If a student is failing to meet one or both graduation requirements, they want it to print:
+"You do not meet the requirements to graduate."
+Add an else statement to the existing if statement.
+//
+credits = 120
+gpa = 1.9
+if (credits >= 120) and (gpa >= 2.0):
+  print("You meet the requirements to graduate!")
+else:
+  print("You do not meet the requirements to graduate.")
 
-                                                            
+                                                      ELSE IF STATEMENTS
+  10. Calvin Coolidge’s Cool College has noticed that students prefer to get letter grades.
+Write an if/elif/else statement that:
+- If grade is 90 or higher, print "A"
+- Else if grade is 80 or higher, print "B"
+- Else if grade is 70 or higher, print "C"
+- Else if grade is 60 or higher, print "D"
+- Else, print "F"
+//
+grade = 86
+if grade >= 90:
+  print("A")
+elif grade >= 80:
+  print("B")
+elif grade >= 70:
+  print("C")
+elif grade >= 60:
+  print("D")
+else:
+  print("F")
+
+                                                      ELSE IF STATEMENTS
+  11. Write a space.py program that helps Codey keep track of their target weight by:
+1.	Checking which number planet is equal to.
+2.	Computing Codey’s weight on the destination planet.
+      Here is the table of conversions:
+      #	Planet	Relative Gravity
+          1	Venus	0.91
+          2	Mars	0.38
+          3	Jupiter	2.34
+          4	Saturn	1.06
+          5	Uranus	0.92
+          6	Neptune	1.19
+//
+weight = 185
+planet = 3
+if planet==1:
+  weight_1=weight*0.91
+  print("The weight is " + str(weight_1))
+
+elif planet==2:
+  weight_2=weight*0.38
+  print("The weight is " + str(weight_2))
+
+elif planet==3:
+  weight_3=weight*2.34
+  print("The weight is " + str(weight_3))
+
+elif planet==4:
+  weight_2=weight*1.06
+  print("The weight is " + str(weight_4))
+
+elif planet==5:
+  weight_2=weight*0.92
+  print("The weight is " + str(weight_5))
+
+else planet==6:
+  weight_6=weight*1.19
+  print("The weight is " + str(weight_6))
+
+
+
+
+
+
+
+
