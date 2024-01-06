@@ -1,1 +1,90 @@
+                                                      WHAT IS A LIST?
+  1.1 A new student just joined the class! Chloe is 65 inches tall. Add Chloe’s height to the end of the list heights.
+//
+heights = [61, 70, 67, 64, 65]
+  1.2 Remove the # in front of the definition of the list broken_heights. If you run this code, you’ll get an error in your terminal:
+SyntaxError: invalid syntax. Add commas (,) to broken_heights so that it runs without errors. broken_heights = [65 71 59 62]
+//
+broken_heights = [65, 71, 59, 62]
+
+                                                      WHAT CAN A LIST CONTAIN?
+  2.1 Add any additional string to the end of the list ints_and_strings.
+//
+ints_and_strings = [1, 2, 3, "four", "five", "Six"]
+  2.2. Create a new list called sam_height_and_testscore that contains:
+The string "Sam" (to represent Sam’s name)
+The number 67 (to represent Sam’s height)
+The float 85.5 (to represent Sam’s score)
+The boolean True (to represent Sam passing the test)
+Make sure to write the elements in exact order.
+//
+sam_height_and_testscore = ["Sam", 67, 85.5, True]
+
+                                                      EMPTY LISTS
+  3. Create an empty list and call it my_empty_list. Don’t put anything in the list just yet.
+//
+my_empty_list = []
+
+                                                      LIST METHODS
+  4. We will be exploring .append() and many other methods in the upcoming exercises but for now take a second to examine and play around with the code for two common list methods.
+//
+      example_list = [1, 2, 3, 4]
+      #Using Append
+      example_list.append(5)
+      print(example_list)
+      #Using Remove
+      example_list.remove(5)
+      print(example_list)
+OUTPUT:
+      [1, 2, 3, 4, 5]
+      [1, 2, 3, 4]
+
+                                                      GROWING A LIST: APPEND
+  5.1 Jiho works for a gardening store called Petal Power. Jiho keeps a record of orders in a list called orders. Use print to inspect the orders he has received today.
+//
+orders = ["daisies", "periwinkle"]
+print(orders)
+  5.2 Jiho just received a new order for "tulips". Use append to add this string to orders.
+//
+orders = ["daisies", "periwinkle"]
+orders.append("tulips")
+print(orders)
+  5.3 Another order has come in! Use append to add "roses" to orders.
+//
+orders = ["daisies", "periwinkle"]
+orders.append("tulips")
+orders.append("roses")
+print(orders)
+  5.4 Use print to inspect the orders Jiho has received today.
+//
+orders = ["daisies", "periwinkle"]
+orders.append("tulips")
+orders.append("roses")
+print(orders)
+
+                                                      GROWING A LIST: PLUS(+)
+  6.1 Jiho is updating a list of orders. He just received orders for "lilac" and "iris". Create a list called new_orders that contains our new orders.
+//
+orders = ["daisy", "buttercup", "snapdragon", "gardenia", "lily"]
+new_orders = orders + ["lilac", "iris"]
+  6.2 Use + to create a new list called orders_combined that combines orders with new_orders.
+//
+orders = ["daisy", "buttercup", "snapdragon", "gardenia", "lily"]
+new_orders = orders + ["lilac", "iris"]
+orders_combined = orders + new_orders
+  6.3 Remove the # and whitespace in front of the list broken_prices --> "#broken_prices = [5, 3, 4, 5, 4] + 4" If you run this code, you’ll get an error: 
+TypeError: can only concatenate list (not "int") to list. Fix the command by inserting brackets ([ and ]) so that it will run without errors.
+//
+...
+broken_prices = [5, 3, 4, 5, 4] + [4]
+
+                                                      ACCESSING LIST ELEMENTS
+  7.1 
+
+
+
+
+
+
+
 
