@@ -79,11 +79,43 @@ TypeError: can only concatenate list (not "int") to list. Fix the command by ins
 broken_prices = [5, 3, 4, 5, 4] + [4]
 
                                                       ACCESSING LIST ELEMENTS
-  7.1 
+  7.1 Use square brackets ([ and ]) to access the 4th employee from the list employees. Save it to the variable employee_four.
+//
+employees = ["Michael", "Dwight", "Jim", "Pam", "Ryan", "Andy", "Robert"]
+employee_four = employees[3]
 
+  7.2 Paste the following code into script.py:
+print(employees[8])
+What happens? Why?
+//
+When we try to access an element that is outside of the range of the list indexes, Python will return an IndexError.
+IndexError: list index out of range
 
+  7.2 In the line of code that you pasted, change 8 to an index that exists so that you don’t get an IndexError. Run your code again!
+//
+employees = ["Michael", "Dwight", "Jim", "Pam", "Ryan", "Andy", "Robert"]
+employee_four = employees[3]
+print(employees[6])
 
+                                                      ACCESSING LIST ELEMENTS: NEGATIVE INDEX
 
+  8.1  Create a variable called last_element. Assign the last element in shopping_list to the variable last_element using a negative index.
+//
+shopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
+last_element=shopping_list[-1]
+
+  8.2 Now select the element with index 5 and save it to the variable index5_element.
+//
+shopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
+last_element=shopping_list[-1]
+index5_element=shopping_list[5]
+
+  8.3 Use print to display both index5_element and last_element. Note that they are equal to "cereal"!
+//
+shopping_list = ["eggs", "butter", "milk", "cucumbers", "juice", "cereal"]
+last_element=shopping_list[-1]
+index5_element=shopping_list[5]
+print(index5_element, last_element)
 
 
 
