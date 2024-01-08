@@ -118,6 +118,148 @@ index5_element=shopping_list[5]
 print(index5_element, last_element)
 
                                                       MODIFYING LIST ELEMENTS
-  9.1 
+  9.1 We have decided to start selling some of our garden produce. Word around our town has spread and people are interested in getting some of our delicious vegetables and fruit.
+We decided to create a waitlist to make sure we can sell to all of our new customers!
+Define a list called garden_waitlist and set the value to contain our customers (in order): "Jiho", "Adam", "Sonny", and "Alisha".
+//
+garden_waitlist=["Jiho", "Adam", "Sonny","Alisha"]
+  9.2 "Adam" decided his fridge is too full at the moment and asked us to remove him from the waitlist and make space for one of our other townsfolk.
+Replace "Adam" with our other interested customer "Calla" using the index method we used in the narrative.
+Print garden_waitlist to see the change!
+//
+garden_waitlist=["Jiho", "Adam", "Sonny","Alisha"]
+garden_waitlist[1]="Calla"
+print(garden_waitlist)
+  9.3 Alisha realized she was already stocked with all the items we are selling. She asked us to replace her with her friend Alex who just ran out.
+Replace Alisha with Alex using a negative index.
+Print garden_waitlist again to see the change!
+//
+garden_waitlist=["Jiho", "Adam", "Sonny","Alisha"]
+garden_waitlist[1]="Calla"
+garden_waitlist[-1]="Alex"
+print(garden_waitlist)
+
+                                                      SHRINKING A LIST: REMOVE
+  10.1 We have decided to get into the grocery store business. Our manager Calla has decided to store all the inventory purchases in a list to help track what products need to be ordered.
+Let’s create a list called order_list with the following values (in this particular order): "Celery", "Orange Juice", "Orange", "Flatbread"
+Print order_list to see the current list.
+//
+order_list=["Celery", "Orange Juice", "Orange", "Flatbread"]
+print(order_list)
+  10.2 We are in luck! We actually found a spare case of "Flatbread" in our back storage. We won’t need to order it anymore. Let’s remove it from order_list using the .remove() method.
+Print order_list to see the current list.
+//
+order_list.remove("Flatbread")
+print(order_list)
+  10.3 Our store has grown to be a huge success! We decided to open a second store and require a new order list. Calla has done us the favor of putting one together.
+Create a new list called new_store_order_list and assign it the following values (in order): "Orange", "Apple", "Mango", "Broccoli", "Mango"
+Note: Our second store is going to need two orders of mangos so the value is duplicated. Print new_store_order_list to see the current list.
+//
+new_store_order_list=["Orange", "Apple", "Mango", "Broccoli", "Mango"]
+print(new_store_order_list)
+  10.4 Calla ran to tell us some important news! She asked us to remove "Onions" from our new new_store_order_list. If we double-check our list, we will notice we don’t have "Onions" on our list.
+Let’s see what happens when we try to remove an item that does not exist. Call the .remove() method with the value of "Onions" on our new_store_order_list list.
+//
+"Traceback (most recent call last):
+  File "script.py", line 11, in <module>
+    new_store_order_list.remove("Onions")
+ValueError: list.remove(x): x not in list"
+
+                                                      TWO-DIMENSIONAL (2D) LISTS
+  11.1 A new student named "Vik" has joined our class. Vik is 68 inches tall. Add a sublist to the end of the heights list that represents Vik and his height.
+//
+heights = [["Jenny", 61], ["Alexus", 70], ["Sam", 67], ["Grace", 64], ["Vik", 68]]
+  11.2 Create a two-dimensional list called ages where each sublist contains a student’s name and their age. Use the following data:
+"Aaron" is 15
+"Dhruti" is 16
+//
+heights = [["Jenny", 61], ["Alexus", 70], ["Sam", 67], ["Grace", 64], ["Vik", 68]
+ages=[["Aaron", 15], ["Dhruti", 16]]
+
+                                                      ACCESSING 2D LISTS
+  12.1 Using the provided table, create a two-dimensional list called class_name_test to represent the data. Each sublist in class_name_test should have one student’s name and their associated score.
+        Name	Test Score
+        "Jenny"	90
+        "Alexus"	85.5
+        "Sam"	83
+        "Ellie"	101.5
+Print class_name_test to see the result.
+//
+class_name_test=[["Jenny", 90],["Alexus", 85.5], ["Sam", 83], ["Ellie", 101.5]]
+print(class_name_test)
+  12.2  Use double square brackets ([][]) to select Sam‘s test score from the list class_name_test. Save it to the variable sams_score.
+Print the variable sams_score to see the result.
+//
+sams_score=class_name_test[2][1]
+print(sams_score)
+  12.3 Use double square brackets ([][]) to select Ellies test score from the list class_name_test. This time only use negative indices! Save it to the variable ellies_score.
+Print the variable ellies_score to see the result.
+//
+ellies_score=class_name_test[-1][-1]
+print(ellies_score)
+
+                                                      MODIFYING 2D LISTS
+  13.1 Our school is expanding! We are welcoming a new set of students today from all over the world.
+Using the provided table, create a two-dimensional list called incoming_class to represent the data. Each sublist in incoming_class should contain the name, nationality, and grade for a single student.
+        Name	Nationality	Grade Level
+        "Kenny"	"American"	9
+        "Tanya"	"Ukrainian"	9
+        "Madison"	"Indian"	7
+Print incoming_class to see our list.
+//
+incoming_class=[["Kenny", "American", 9], ["Tanya", "Ukrainian", 9], ["Madison", "Indian", 7]]
+print(incoming_class)
+  13.2 "Madison" passed an exam to advance a grade. She will be pushed into 8th grade rather than her current 7th in our list.
+Modify the list using double brackets [][] to make the change. Use positive indices. Print incoming_class to see our change.
+//
+incoming_class[2][2]=8
+print(incoming_class)
+  13.3 "Kenny" likes to be called by his nickname "Ken". Modify the list using double brackets [][] to accommodate the change but only using negative indices. Print incoming_class to see our change.
+//
+incoming_class[-3][-3]="Ken"
+print(incoming_class)
+
+                                                      REVIEW
+  14.1 Maria is entering customer data for her web store business. We’re going to help her organize her data.
+Start by turning this list of customer first names into a list called first_names. Make sure to enter the names in this order:
+      Ainsley
+      Ben
+      Chani
+      Depak
+//
+first_names=["Ainsley", "Ben", "Chani", "Depak"]
+  14.2 Maria wants to track all customer’s preferred sizes for her clothing. Create a list called preferred_size. Fill our new list preferred_size with the following data, 
+containing the preferred sizes for Ainsley, Ben, and Chani: ["Small", "Large", "Medium"]
+//
+first_names=["Ainsley", "Ben", "Chani", "Depak"]
+preferred_size=["Small", "Large", "Medium"]
+  14.3 Oh no! We forgot to add Depak’s size. Depak’s size is "Medium". Use .append() to add "Medium" to the preferred_size list. Print preferred_size to see our change.
+//
+first_names=["Ainsley", "Ben", "Chani", "Depak"]
+preferred_size=["Small", "Large", "Medium"]
+preferred_size.append("Medium")
+print(preferred_size)
+  14.4 Create a two-dimensional list called customer_data using the following table as a reference for the data. Each sublist should contain a name, size, and expedited shipping option for a single person.
+      Name	Size	Expedited Shipping
+      "Ainsley"	"Small"	True
+      "Ben"	"Large"	False
+      "Chani"	"Medium"	True
+      "Depak"	"Medium"	False
+Print customer_data to see the data.
+ 14.5 Change the data value for "Chani"‘s shipping preference to False in our two-dimensional list to reflect the change.
+//
+customer_data=[["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+print(customer_data)
+customer_data[2][2]=False
+  14.6 "Ben" reached out to Maria asking to remove his shipping option (the True or False value) because he is unsure what type he wants.
+Use the .remove() method to delete the shipping value from the sublist that contains Ben’s data.
+//
+customer_data[1].remove(False)
+  14.7 Great job making it this far! One last thing, Maria received new customers, "Amit" and "Karim", the following 2d list contains their data: [["Amit", "Large", True], ["Karim", "X-Large", False]]
+Create a new variable customer_data_final. Combine our existing list customer_data with our new customer 2d list using + by adding it to the end of customer_data. Print customer_data_final to see our final result.
+//
+customer_data_final=customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
+print(customer_data_final)
+
 
 
