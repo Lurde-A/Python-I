@@ -70,3 +70,6 @@ beginning = suitcase[0:2]
   7.3 Create a new list called middle that contains the middle two items ( ["pants", "pants"] ) from suitcase. Print middle to see the slice!
 //
 middle = suitcase [2:4]
+
+                                    SLICING LISTS II
+  8.1
