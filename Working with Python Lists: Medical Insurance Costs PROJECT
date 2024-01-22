@@ -1,0 +1,20 @@
+  1. First, take a look at the two lists in script.py. The list names stores the names of ten individuals, and insurance_costs stores their medical insurance costs. Let’s add 
+additional data to these lists:
+  - Append a new individual, "Priscilla", to names.
+  - Append her insurance cost, 8320.0, to insurance_costs.
+
+names = ["Mohamed", "Sara", "Xia", "Paul", "Valentina", "Jide", "Aaron", "Emily", "Nikita", "Paul"]
+insurance_costs = [13262.0, 4816.0, 6839.0, 5054.0, 14724.0, 5360.0, 7640.0, 6072.0, 2750.0, 12064.0]
+//
+names.append("Priscilla")
+insurance_costs.append( 8320.0)
+  2. Currently, the names and insurance_costs lists are separate, but we want each insurance cost to be paired with a name. Create a new variable called medical_records that combines 
+insurance_costs and names into a list using the zip() function. The list should have the following structure:
+  [(cost_0, name_0), (cost_1, name_1), (cost_2, name_2), ...]
+//
+medical_records = list(zip(names,insurance_costs))
+  3. Print out medical_records in the terminal, and make sure the output is what you expected.
+//
+medical_records = list(zip(names,insurance_costs))
+print(medical_records)
+  4. 
