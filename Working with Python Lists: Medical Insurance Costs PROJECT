@@ -17,4 +17,8 @@ medical_records = list(zip(names,insurance_costs))
 //
 medical_records = list(zip(names,insurance_costs))
 print(medical_records)
-  4. 
+  4. Let’s explore our medical data. We want to see how many medical records we’re dealing with. Create a variable called num_medical_records that stores the length of medical_records.
+//
+num_medical_records=len(medical_records)
+  5. Print num_medical_records with the following message: There are {number of medical records} medical records. 
+//
