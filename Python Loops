@@ -12,4 +12,70 @@ print ("This can be so much easier with loops!")
 print ("This can be so much easier with loops!")
 print ("This can be so much easier with loops!")
                                 FOR LOOPS: INTRODUCTION 
-  2. 
+  2.1 Run the code. We should get an IndentationError because the print(game) line is not indented.
+board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
+for game in board_games:
+print(game)
+//
+   () Gives the ERROR: IndentationError: expected an indented block
+  2.2 Indent (2 spaces or tab) line 6 so that we don’t get an IndentationError when you run the code. Run the code again!
+//
+board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
+for game in board_games:
+  print(game)
+    () Provides the right answer - LIST OF BOARD GAMES
+  2.3 Write a for loop that prints each sport in the list sport_games.
+sport_games = ["football", "hockey", "baseball", "cricket"]
+//
+for sport in sport_games:
+  print(sport)
+    () Provides a list of all sport games
+
+                                FOR LOOPS: USING RANGE
+  3. Use the range() function in a for loop to print() out the provided promise variable five times.
+//
+for i in range(5):
+  print(promise)
+
+                                WHILE LOOPS: INTRODUCTION
+  4.1 Examine the while loop from the narrative in your code editor. There are additional print() statements to help visualize the iterations. Run the code to see what happens on 
+each iteration of the loop. When you are finished, comment out the example to make space for the rest of the checkpoints. To quickly comment out the code, use your cursor or mouse 
+to highlight all the code and press command ⌘ + / on a Mac or CTRL + / on a Windows machine.
+# While Loop Walkthrough
+count = 0
+print("Starting While Loop")
+while count <= 3:
+  # Loop Body
+  # Print if the condition is still true
+  print("Loop Iteration - count <= 3 is still true")
+  # Print the current value of count 
+  print("Count is currently " + str(count))
+  # Increment count
+  count += 1
+  print(" ----- ")
+print("While Loop ended")
+  4.2 Let’s write a while loop that counts down from 10 to 0(inclusive). Once our loop is finished we will commemorate our accomplishment by printing "We have liftoff!". As we saw in 
+the narrative, our key components will be:
+  A variable to keep track of the count, and also help our loop eventually stop.
+  A condition that our while loop will check on each iteration.
+  Several code statements to execute on each iteration of the loop.
+  Let’s tackle the first component!
+Create a variable named countdown and set the value to 10.
+//
+countdown = 10
+  4.3. Now let’s tackle the actual while loop. Define a while loop that will run while our countdown variable is greater than or equal to zero. On each iteration:
+  We should print() the value of the countdown variable.
+  We should decrease the value of the countdown variable by 1
+  Make sure to only print the value of countdown.
+//
+countdown = 10
+while countdown >= 0:
+  print(str(countdown))
+  countdown -= 1
+  4.4. Now that we have built our loop, let’s commemorate our success by printing "We have liftoff!" after the while loop.
+//
+countdown = 10
+while countdown >= 0:
+  print(str(countdown))
+  countdown -= 1
+print("We have liftoff!")
