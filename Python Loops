@@ -11,6 +11,7 @@ print ("This can be so much easier with loops!")
 print ("This can be so much easier with loops!")
 print ("This can be so much easier with loops!")
 print ("This can be so much easier with loops!")
+
                                 FOR LOOPS: INTRODUCTION 
   2.1 Run the code. We should get an IndentationError because the print(game) line is not indented.
 board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
@@ -79,3 +80,37 @@ while countdown >= 0:
   print(str(countdown))
   countdown -= 1
 print("We have liftoff!")
+
+                                WHILE LOOPS: LISTS
+  5.1 First, we will need a variable to represent the length of the list. This will help us know how many times our while loop needs to iterate. Create a variable length and set its 
+value to be the length of the list of python_topics
+//
+python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+length = len(python_topics)
+  5.2 Next, we will require a variable to compare to our length variable to make sure we are able to implement a condition that eventually allows the loop to stop. Create a variable 
+called index and initialize the value to be 0.
+//
+length = len(python_topics)
+index = 0
+  5.3 Let’s now build our loop. We want our loop to iterate over the list of python_topics and on each iteration print "I am learning about <element from python_topics>". 
+For this loop we will need the following components:
+  A condition for our while loop
+  A statement in the loop body to print from our condition
+  A statement in the loop body to increment our index forward.
+//
+length = len(python_topics)
+index = 0
+while index < length:
+  print("I am learning about " + python_topics[index])
+  index += 1
+
+                                INFINITE LOOPS
+  6.1 Suppose we have two lists of students, students_period_A and students_period_B. We want to combine all students into students_period_B. Delete the line causing the infinite 
+loop and fix it to accomplish the original goal of combining all students from students_period_A into students_period_B. 
+//
+students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
+students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
+for student in students_period_A:
+  students_period_B.append(student)
+  print(students_period_B)
+
