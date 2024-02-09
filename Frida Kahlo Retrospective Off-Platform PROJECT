@@ -36,4 +36,13 @@ audio_tour_number and check your work by printing the list.
 audio_tour_number = list(range(1,8,1))
 print(audio_tour_number)
 
-  7. 
+  7. We’re finally ready to create our master list. Zip the audio_tour_number list to the paintings list and save it as master_list.
+//
+master_list = zip(audio_tour_number, paintings)
+master_list = list(master_list)
+
+  8. Print the master_list to the terminal.
+//
+master_list = zip(audio_tour_number, paintings)
+master_list = list(master_list)
+print(master_list)
