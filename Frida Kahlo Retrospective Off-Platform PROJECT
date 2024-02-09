@@ -29,3 +29,11 @@ OTHER GOOD OPTION:   print(paintings)
 many paintings there are in total. Find the length of the paintings list.
 //
 print(len(paintings))
+
+  6. Use the range method to generate a list of identification numbers that starts at 1 and is equal in length to our list of items. Save the list to the variable 
+audio_tour_number and check your work by printing the list.
+//
+audio_tour_number = list(range(1,8,1))
+print(audio_tour_number)
+
+  7. 
