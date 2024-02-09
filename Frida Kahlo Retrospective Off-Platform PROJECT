@@ -8,3 +8,24 @@ dates = [1939, 1933, 1946, 1940]
 
   3. It doesn’t do much good to have the paintings without their dates, and vice versa. Zip together the two lists so that each painting is paired with its date and resave it to 
 the paintings variable. Make sure to convert the zipped object into a list using the list() function. Print the results to the terminal to check your work.
+//
+paintings = zip(paintings, dates)
+list(paintings)
+
+  4. There were some last minute additions to the show that we need to add to our list. Append the following paintings to our paintings list then re-print to check they were 
+added correctly:
+      'The Broken Column', 1944
+      'The Wounded Deer', 1946
+      'Me and My Doll', 1937
+//
+#OPTION   paintings_added=[('The Broken Column', 1944), ('The Wounded Deer', 1946), ('Me and My Doll', 1937)]
+#OPTION   paintings.append(paintings_added)
+OTHER GOOD OPTION:   paintings.append(('The Broken Column', 1944))
+OTHER GOOD OPTION:   paintings.append(('The Wounded Deer', 1946))
+OTHER GOOD OPTION:   paintings.append(('Me and My Doll', 1937))
+OTHER GOOD OPTION:   print(paintings)
+
+  5. Since each of these paintings is going to be in the audio tour, they each need a unique identification number. But before we assign them a number, we first need to check how 
+many paintings there are in total. Find the length of the paintings list.
+//
+print(len(paintings))
